@@ -67,6 +67,11 @@ app.get("/secrets",function(req,res){
    }
 });
 
+app.get("/logout",function(req,res){
+    req.logOut();
+    res.redirect("/");
+})
+
 //REGISTER(Create Users)
 app.post("/register",function(req,res){
   
